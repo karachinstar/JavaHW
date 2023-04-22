@@ -1,7 +1,4 @@
 package HomeWork.HWS1;
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 /**
  * Вывести все простые числа от 1 до 1000
  */
