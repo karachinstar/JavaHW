@@ -14,11 +14,26 @@ public class task3 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите первое число: ");
-        int x = iScanner.nextInt();
-        System.out.printf("Введите операцию: ");
-        String operation = iScanner.nextLine();
-        System.out.printf("\nВведите второе число: ");
-        int y = iScanner.nextInt();
+        double x = iScanner.nextInt();
+        System.out.printf("Введите операцию '+, -, / или *': ");
+        String operation = iScanner.next();
+        System.out.printf("Введите второе число: ");
+        double y = iScanner.nextInt();
         iScanner.close();
+        if(operation.equals("+")){
+            System.out.printf("%.0f + %.0f = %.0f", x, y, x + y);
+        }
+        else if (operation.equals("-")){
+            System.out.printf("%.0f - %.0f = %.0f", x, y, x - y);
+        }
+        else if (operation.equals("*")){
+            System.out.printf("%.0f * %.0f = %.0f", x, y, x * y);
+        }
+        else if (operation.equals("/")){
+            System.out.printf("%.0f / %.0f = %.2f", x, y, x / y);
+        }
+        else{
+            System.out.println("Вы ввели не верный оператор");
+        }
     }
 }
