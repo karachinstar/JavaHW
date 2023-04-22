@@ -11,13 +11,14 @@ public class task1 {
         int n = iScanner.nextInt();
         iScanner.close();
         int sumNum = 0;
-        int prodNum = 1;
+        double prodNum = 1;
         for(int i = 1; i <= n; i++){
          sumNum = sumNum + i;
          prodNum = prodNum * i;
         }
+        //String str = String.format("\nПроизведение чисел от 1 до %d = %.0f", n, prodNum);
         System.out.printf("Сумма чисел от 1 до %d = %d", n, sumNum);
-        System.out.printf("\nПроизведение чисел от 1 до %d = %d", n, prodNum);
+        System.out.printf("\nПроизведение чисел от 1 до %d = %.0f", n, prodNum);
     }
     
 }
