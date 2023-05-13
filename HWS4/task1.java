@@ -19,7 +19,7 @@ public class task1 {
     }
 
     public static int getRandomNumber() { // генерирует случайное число
-        double x = (Math.random() * 99);
+        double x = (Math.random() * 10);
         int num = (int) x;
         return num;
     }
