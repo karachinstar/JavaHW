@@ -11,6 +11,7 @@ public class task2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите размер очереди - ");
         Integer n = sc.nextInt();
+        sc.close();
         for (int i = 0; i < n; i++) {
             enqueue(myQueue, getRandomNumber()); 
         }
